@@ -2,8 +2,14 @@ package com.rk;
 
 public class Calculator {
 	
-		public int add(int a,int b) {
-			int c=a+b;
+		public Integer add(Integer a,Integer b) {
+			Integer c=a+b;
+			System.out.println(c);
+			return c;
+		}
+		
+		public Double mul(Double i, Double j) {
+			Double c=i*j;
 			System.out.println(c);
 			return c;
 		}
