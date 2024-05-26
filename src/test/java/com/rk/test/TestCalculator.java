@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.rk.Calculator;
@@ -22,6 +23,14 @@ public class TestCalculator {
 	public static void destroy() {
 		System.out.println("destroy");
 		cal=null;
+	}
+	
+	@Test
+	@Ignore
+	public void addTestIgnore() {
+		Integer actualResult = cal.add(10, 20);
+		Integer expectedResult= 30;
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
