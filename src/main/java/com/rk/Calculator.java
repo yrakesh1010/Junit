@@ -13,6 +13,18 @@ public class Calculator {
 			System.out.println(c);
 			return c;
 		}
+		
+		public Integer div(Integer s, Integer t)  {
+			try {
+				Thread.sleep(1005);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			Integer c=s/t;
+			System.out.println(c);
+			return c;
+		}
 
 	
 

@@ -46,4 +46,23 @@ public class TestCalculator {
 		Double expectedResult=200.0;
 		assertEquals(actualResult, expectedResult);
 	}
+	
+	@Test(expected = ArithmeticException.class)
+	public void divTestException()  {
+		cal.div(10, 0);
+	}
+	
+	@Test(timeout = 1000)
+	public void divTestTimeout()  {
+		Integer actualResult = cal.div(10, 2);
+		Integer expectedResult=5;
+		assertEquals(actualResult, expectedResult);
+	} 
+	
+	@Test
+	public void divTest() {
+		Integer actualResult = cal.div(10, 2);
+		Integer expectedResult=5;
+		assertEquals(actualResult, expectedResult);
+	}
 }
