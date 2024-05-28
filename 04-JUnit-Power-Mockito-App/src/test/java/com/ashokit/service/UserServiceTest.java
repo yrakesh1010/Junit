@@ -58,7 +58,7 @@ public class UserServiceTest {
 	@Test
 	public void testM1() throws Exception {
 		UserService userServiceSpy = PowerMockito.spy(new UserService());
-
+                //Mocking private method
 		PowerMockito.when(userServiceSpy, "formatMsg", "test msg")
 					.thenReturn("TEST MSG FORMATTED");
 		
